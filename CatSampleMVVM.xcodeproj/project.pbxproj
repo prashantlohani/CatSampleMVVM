@@ -14,6 +14,8 @@
 		991DD02628E1BDE80078B2BD /* CatSampleMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991DD02528E1BDE80078B2BD /* CatSampleMVVMTests.swift */; };
 		991DD03028E1BDE80078B2BD /* CatSampleMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991DD02F28E1BDE80078B2BD /* CatSampleMVVMUITests.swift */; };
 		991DD03228E1BDE80078B2BD /* CatSampleMVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991DD03128E1BDE80078B2BD /* CatSampleMVVMUITestsLaunchTests.swift */; };
+		991DD04328E1CFD80078B2BD /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991DD04228E1CFD80078B2BD /* Breed.swift */; };
+		991DD04528E1D0600078B2BD /* BreedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991DD04428E1D0600078B2BD /* BreedImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		991DD02B28E1BDE80078B2BD /* CatSampleMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatSampleMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		991DD02F28E1BDE80078B2BD /* CatSampleMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatSampleMVVMUITests.swift; sourceTree = "<group>"; };
 		991DD03128E1BDE80078B2BD /* CatSampleMVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatSampleMVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		991DD04228E1CFD80078B2BD /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		991DD04428E1D0600078B2BD /* BreedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,10 @@
 			children = (
 				991DD01428E1BDE70078B2BD /* CatSampleMVVMApp.swift */,
 				991DD01628E1BDE70078B2BD /* ContentView.swift */,
+				991DD04128E1CF520078B2BD /* networking */,
+				991DD04028E1CF0C0078B2BD /* viewmodel */,
+				991DD03F28E1CEFB0078B2BD /* model */,
+				991DD03E28E1CED90078B2BD /* view */,
 				991DD01828E1BDE80078B2BD /* Assets.xcassets */,
 				991DD01A28E1BDE80078B2BD /* Preview Content */,
 			);
@@ -125,6 +133,36 @@
 				991DD03128E1BDE80078B2BD /* CatSampleMVVMUITestsLaunchTests.swift */,
 			);
 			path = CatSampleMVVMUITests;
+			sourceTree = "<group>";
+		};
+		991DD03E28E1CED90078B2BD /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		991DD03F28E1CEFB0078B2BD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				991DD04228E1CFD80078B2BD /* Breed.swift */,
+				991DD04428E1D0600078B2BD /* BreedImage.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		991DD04028E1CF0C0078B2BD /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		991DD04128E1CF520078B2BD /* networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991DD04528E1D0600078B2BD /* BreedImage.swift in Sources */,
+				991DD04328E1CFD80078B2BD /* Breed.swift in Sources */,
 				991DD01728E1BDE70078B2BD /* ContentView.swift in Sources */,
 				991DD01528E1BDE70078B2BD /* CatSampleMVVMApp.swift in Sources */,
 			);
