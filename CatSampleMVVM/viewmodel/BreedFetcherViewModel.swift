@@ -18,30 +18,24 @@ class BreedFetcherViewModel: ObservableObject{
     }
     
     func fetchBreeds() {
+        let service = APIService()
         isLoading = true
         errorMessage = nil
-        let url = URL(string: "https://api.thecatapi.com/v1/breeds")!
-        
-        let task = URLSession.shared.dataTask(with: url) {[unowned self] (data, response, error) in
             
+        let url = URL(string: "https://api.thecatapi.com/v1/breeds")
+        service.fetchBreeds(url: url){ [unowned self] result in
             DispatchQueue.main.async {
-            self.isLoading = false
-            }
-            let decoder = JSONDecoder()
-            if let data = data {
-                do{
-                    let breeds = try decoder.decode([Breed].self, from: data)
-                    print(breeds)
-                    
-                    DispatchQueue.main.async {
-                        self.breeds = breeds
-                    }
-                   
-                }catch{
+                
+                self.isLoading = false
+                switch result{
+                case.failure(let error):
+                    self.errorMessage = error.localizedDescription
                     print(error)
+                case.success(let breeds):
+                    self.breeds = breeds
+                    print("Success Response is:",breeds)
                 }
             }
         }
-        task.resume()
     }
 }
