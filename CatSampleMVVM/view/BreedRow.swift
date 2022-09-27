@@ -13,7 +13,7 @@ struct BreedRow: View {
     var body: some View {
         HStack {
             if breed.image?.url != nil{
-                AsyncImage(url: URL(string: breed.image!.url!)) { phase in
+                CachedAsyncImage(url: URL(string: breed.image!.url!)) { phase in
                     if let image = phase.image {
                         image.resizable()
                             .scaledToFill()

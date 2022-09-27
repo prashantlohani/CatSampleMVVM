@@ -27,6 +27,7 @@
 		99CBF6F728E2A159005E98CB /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CBF6F628E2A159005E98CB /* APIServiceProtocol.swift */; };
 		99CBF6F928E2A4D9005E98CB /* BreedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CBF6F828E2A4D9005E98CB /* BreedImages.swift */; };
 		99CBF6FB28E2A581005E98CB /* ImageFetcherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CBF6FA28E2A581005E98CB /* ImageFetcherVM.swift */; };
+		99CBF6FE28E2B3E8005E98CB /* CachedAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CBF6FD28E2B3E8005E98CB /* CachedAsyncImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		99CBF6F628E2A159005E98CB /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
 		99CBF6F828E2A4D9005E98CB /* BreedImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImages.swift; sourceTree = "<group>"; };
 		99CBF6FA28E2A581005E98CB /* ImageFetcherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcherVM.swift; sourceTree = "<group>"; };
+		99CBF6FD28E2B3E8005E98CB /* CachedAsyncImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachedAsyncImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			children = (
 				991DD01428E1BDE70078B2BD /* CatSampleMVVMApp.swift */,
 				991DD01628E1BDE70078B2BD /* ContentView.swift */,
+				99CBF6FC28E2B3E8005E98CB /* CachedAsyncImage */,
 				991DD04128E1CF520078B2BD /* networking */,
 				991DD04028E1CF0C0078B2BD /* viewmodel */,
 				991DD03F28E1CEFB0078B2BD /* model */,
@@ -196,6 +199,14 @@
 				99CBF6F628E2A159005E98CB /* APIServiceProtocol.swift */,
 			);
 			path = networking;
+			sourceTree = "<group>";
+		};
+		99CBF6FC28E2B3E8005E98CB /* CachedAsyncImage */ = {
+			isa = PBXGroup;
+			children = (
+				99CBF6FD28E2B3E8005E98CB /* CachedAsyncImage.swift */,
+			);
+			path = CachedAsyncImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +349,7 @@
 				991DD04D28E1E1FE0078B2BD /* ErrorView.swift in Sources */,
 				991DD04F28E1E2090078B2BD /* LoadingView.swift in Sources */,
 				99CBF6EF28E2860B005E98CB /* APIService.swift in Sources */,
+				99CBF6FE28E2B3E8005E98CB /* CachedAsyncImage.swift in Sources */,
 				991DD04728E1D23F0078B2BD /* BreedFetcherViewModel.swift in Sources */,
 				991DD04B28E1DE010078B2BD /* BreedListView.swift in Sources */,
 				99CBF6FB28E2A581005E98CB /* ImageFetcherVM.swift in Sources */,

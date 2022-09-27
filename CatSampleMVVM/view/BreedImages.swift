@@ -20,7 +20,7 @@ struct BreedImages: View {
                 LazyVGrid(columns: columns, spacing: 1, content: {
                     ForEach(viewModel.images, id: \.self ){ images in
                         Color.gray.overlay(
-                               AsyncImage(url: URL(string: images.url!)) { phase in
+                               CachedAsyncImage(url: URL(string: images.url!)) { phase in
                                    if let image = phase.image {
                                        image.resizable()
                                            .scaledToFill()
