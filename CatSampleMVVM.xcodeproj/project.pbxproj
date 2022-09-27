@@ -25,6 +25,8 @@
 		99CBF6F128E294FA005E98CB /* BreedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CBF6F028E294FA005E98CB /* BreedRow.swift */; };
 		99CBF6F328E2958D005E98CB /* BreedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CBF6F228E2958D005E98CB /* BreedDetailView.swift */; };
 		99CBF6F728E2A159005E98CB /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CBF6F628E2A159005E98CB /* APIServiceProtocol.swift */; };
+		99CBF6F928E2A4D9005E98CB /* BreedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CBF6F828E2A4D9005E98CB /* BreedImages.swift */; };
+		99CBF6FB28E2A581005E98CB /* ImageFetcherVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CBF6FA28E2A581005E98CB /* ImageFetcherVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		99CBF6F028E294FA005E98CB /* BreedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedRow.swift; sourceTree = "<group>"; };
 		99CBF6F228E2958D005E98CB /* BreedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailView.swift; sourceTree = "<group>"; };
 		99CBF6F628E2A159005E98CB /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
+		99CBF6F828E2A4D9005E98CB /* BreedImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImages.swift; sourceTree = "<group>"; };
+		99CBF6FA28E2A581005E98CB /* ImageFetcherVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcherVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,7 @@
 				991DD04E28E1E2090078B2BD /* LoadingView.swift */,
 				99CBF6F028E294FA005E98CB /* BreedRow.swift */,
 				99CBF6F228E2958D005E98CB /* BreedDetailView.swift */,
+				99CBF6F828E2A4D9005E98CB /* BreedImages.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				991DD04628E1D23F0078B2BD /* BreedFetcherViewModel.swift */,
+				99CBF6FA28E2A581005E98CB /* ImageFetcherVM.swift */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -334,6 +340,8 @@
 				99CBF6EF28E2860B005E98CB /* APIService.swift in Sources */,
 				991DD04728E1D23F0078B2BD /* BreedFetcherViewModel.swift in Sources */,
 				991DD04B28E1DE010078B2BD /* BreedListView.swift in Sources */,
+				99CBF6FB28E2A581005E98CB /* ImageFetcherVM.swift in Sources */,
+				99CBF6F928E2A4D9005E98CB /* BreedImages.swift in Sources */,
 				99CBF6ED28E28452005E98CB /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
