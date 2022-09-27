@@ -41,7 +41,14 @@ struct BreedImages: View {
                               ).frame(maxWidth: .infinity)
                               .aspectRatio(1, contentMode: .fit) // << for square !!
                               .clipped()
-                        
+                        if(!viewModel.showProgress)
+                        {
+                            ProgressView()
+                                .progressViewStyle(.circular)
+                                .onAppear(){
+                                    viewModel.loadMore(for: breed.id)
+                                }
+                        }
                     }
                 }).padding(5)
                     .onAppear(){
