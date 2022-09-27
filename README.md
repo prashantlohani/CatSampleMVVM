@@ -1,7 +1,8 @@
 # CatSampleMVVM
 CAT API Sample 
 
-<div style="width:360px;max-width:100%;"><div style="height:0;padding-bottom:229.72%;position:relative;"><iframe width="360" height="827" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/6utqjp"></iframe></div><p><a href="https://imgflip.com/gif/6utqjp">via Imgflip</a></p></div>
+![6utqrt](https://user-images.githubusercontent.com/1665122/192443842-3df8a4db-8c2f-4c1c-8ccb-87f7369d4a6c.gif)
+
 
 On launch the app fetches data from thecatapi.com and populates the list of available cat breeds with image and breed name. 
 SearchBar for searching the cat breed.
