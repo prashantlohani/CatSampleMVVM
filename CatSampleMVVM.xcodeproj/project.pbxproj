@@ -24,6 +24,7 @@
 		99CBF6EF28E2860B005E98CB /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CBF6EE28E2860B005E98CB /* APIService.swift */; };
 		99CBF6F128E294FA005E98CB /* BreedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CBF6F028E294FA005E98CB /* BreedRow.swift */; };
 		99CBF6F328E2958D005E98CB /* BreedDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CBF6F228E2958D005E98CB /* BreedDetailView.swift */; };
+		99CBF6F728E2A159005E98CB /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CBF6F628E2A159005E98CB /* APIServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		99CBF6EE28E2860B005E98CB /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		99CBF6F028E294FA005E98CB /* BreedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedRow.swift; sourceTree = "<group>"; };
 		99CBF6F228E2958D005E98CB /* BreedDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailView.swift; sourceTree = "<group>"; };
+		99CBF6F628E2A159005E98CB /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 			children = (
 				99CBF6EC28E28452005E98CB /* APIError.swift */,
 				99CBF6EE28E2860B005E98CB /* APIService.swift */,
+				99CBF6F628E2A159005E98CB /* APIServiceProtocol.swift */,
 			);
 			path = networking;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				991DD04528E1D0600078B2BD /* BreedImage.swift in Sources */,
 				991DD04328E1CFD80078B2BD /* Breed.swift in Sources */,
 				99CBF6F128E294FA005E98CB /* BreedRow.swift in Sources */,
+				99CBF6F728E2A159005E98CB /* APIServiceProtocol.swift in Sources */,
 				991DD01728E1BDE70078B2BD /* ContentView.swift in Sources */,
 				99CBF6F328E2958D005E98CB /* BreedDetailView.swift in Sources */,
 				991DD01528E1BDE70078B2BD /* CatSampleMVVMApp.swift in Sources */,

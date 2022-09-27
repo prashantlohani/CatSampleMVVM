@@ -13,12 +13,14 @@ class BreedFetcherViewModel: ObservableObject{
     @Published var isLoading: Bool = false
     @Published var errorMessage: String? = nil
     
-    init(){
-       fetchBreeds()
+    let service: APIServiceProtocol
+    
+    init (service: APIServiceProtocol = APIService()){
+        self.service = service
+       fetchAllBreeds()
     }
     
-    func fetchBreeds() {
-        let service = APIService()
+    func fetchAllBreeds() {
         isLoading = true
         errorMessage = nil
             

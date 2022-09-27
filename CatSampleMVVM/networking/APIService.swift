@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct APIService{
+struct APIService : APIServiceProtocol{
     
     func fetchBreeds(url: URL?, completion: @escaping(Result<[Breed], APIError>) -> Void) {
     guard let url = url else {
