@@ -20,6 +20,7 @@
 		991DD04B28E1DE010078B2BD /* BreedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991DD04A28E1DE010078B2BD /* BreedListView.swift */; };
 		991DD04D28E1E1FE0078B2BD /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991DD04C28E1E1FE0078B2BD /* ErrorView.swift */; };
 		991DD04F28E1E2090078B2BD /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991DD04E28E1E2090078B2BD /* LoadingView.swift */; };
+		99CBF6ED28E28452005E98CB /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CBF6EC28E28452005E98CB /* APIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		991DD04A28E1DE010078B2BD /* BreedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListView.swift; sourceTree = "<group>"; };
 		991DD04C28E1E1FE0078B2BD /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		991DD04E28E1E2090078B2BD /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		99CBF6EC28E28452005E98CB /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		991DD04128E1CF520078B2BD /* networking */ = {
 			isa = PBXGroup;
 			children = (
+				99CBF6EC28E28452005E98CB /* APIError.swift */,
 			);
 			path = networking;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				991DD04F28E1E2090078B2BD /* LoadingView.swift in Sources */,
 				991DD04728E1D23F0078B2BD /* BreedFetcherViewModel.swift in Sources */,
 				991DD04B28E1DE010078B2BD /* BreedListView.swift in Sources */,
+				99CBF6ED28E28452005E98CB /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
