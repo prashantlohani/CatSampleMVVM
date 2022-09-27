@@ -54,4 +54,15 @@ struct Breed: Codable, CustomStringConvertible, Identifiable {
         self.image = image
         self.isHairless = isHairless
     }
+    
+    static func example() -> Breed {
+           return Breed(name: "Abyssinian",
+                        id: "abys",
+                        explaination: "The Abyssinian is easy to care for, and a joy to have in your home. They’re affectionate cats and love both people and other animals.",
+                        temperament: "Active, Energetic, Independent, Intelligent, Gentle",
+                        energyLevel: 5,
+                        isHairless: false, image: BreedImage(height: 100, id: "i", url: "https://cdn2.thecatapi.com/images/unX21IBVB.jpg", width: 100))
+           
+       }
+       
 }

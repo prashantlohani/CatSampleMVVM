@@ -38,4 +38,15 @@ class BreedFetcherViewModel: ObservableObject{
             }
         }
     }
+
+static func errorState() -> BreedFetcherViewModel{
+   let fetcher = BreedFetcherViewModel()
+   fetcher.errorMessage = APIError.url(URLError.init(.notConnectedToInternet)).localizedDescription
+   return fetcher
+}
+   static func successState() -> BreedFetcherViewModel{
+       let fetcher = BreedFetcherViewModel()
+       fetcher.breeds = [Breed.example(), Breed.example()]
+       return fetcher
+   }
 }
