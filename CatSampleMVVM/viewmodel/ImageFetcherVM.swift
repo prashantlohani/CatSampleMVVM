@@ -35,7 +35,29 @@ class ImageFetcherVM: ObservableObject{
     func fetchAllBreedImages(for breed_id: String){
         isLoading = true
         errorMessage = nil
-       
+        
+        let url = URL(string: "https://api.thecatapi.com/v1/images/search?breed_ids=\(breed_id)&limit=\(limit)&page=\(page)&api_key=\(api_key)&order=DESC")
+        self.page += 1
+        
+        service.fetchImages(url: url){ [unowned self] result in
+            DispatchQueue.main.async {
+        
+                self.isLoading = false
+                switch result{
+                case.failure(let error):
+                    self.errorMessage = error.localizedDescription
+                    print(error)
+                case.success(let breeds2):
+                    self.pagination_count = (breeds2.first as! NSString).integerValue
+                    let breeds3: [BreedImage] = breeds2.last as! [BreedImage]
+                    for breed in breeds3{
+                        self.images.append(breed)
+                    }
+                    self.totalValues = self.images.count
+                
+                }
+            }
+        }
         
     }
     

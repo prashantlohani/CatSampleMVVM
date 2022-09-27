@@ -64,5 +64,13 @@ struct Breed: Codable, CustomStringConvertible, Identifiable {
                         isHairless: false, image: BreedImage(height: 100, id: "i", url: "https://cdn2.thecatapi.com/images/unX21IBVB.jpg", width: 100))
            
        }
-       
+    
+    static func example1() -> BreedImage {
+        return BreedImage(height: 100,
+                          id: "i",
+                          url: "https://cdn2.thecatapi.com/images/unX21IBVB.jpg", width: 100)
+        
+    }
+    
+
 }

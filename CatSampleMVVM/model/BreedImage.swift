@@ -12,5 +12,5 @@ struct BreedImage: Codable, Hashable, Identifiable {
     let id: String?
     let url: String?
     let width: Int?
-    
+
 }

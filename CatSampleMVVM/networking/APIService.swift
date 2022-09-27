@@ -59,6 +59,7 @@ struct APIService : APIServiceProtocol{
                         let serverResponse = response as! HTTPURLResponse
                         let paginationCount = serverResponse.allHeaderFields["pagination-count"]!
                                 print("paginationCount=",paginationCount)
+                            //Adding pagination-header to response
                             arr.append(paginationCount)
                         }
                         let breeds = try decoder.decode([BreedImage].self, from: data)
