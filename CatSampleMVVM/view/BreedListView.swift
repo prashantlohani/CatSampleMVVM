@@ -9,11 +9,30 @@ import SwiftUI
 
 struct BreedListView: View {
     let breeds: [Breed]
+    var filteredBreeds: [Breed]{
+        if searchText.count == 0 {
+            return breeds
+        }else {
+            return breeds.filter{ $0.name.contains(searchText)}
+        }
+    }
+    @State private var searchText: String = ""
+    
+    
     var body: some View {
-        List{
-            ForEach(breeds){breed in
-                BreedRow(breed: breed)
+        NavigationView{
+            List{
+                ForEach(filteredBreeds){ breed in
+                   
+                        BreedRow(breed: breed)
+                    
+                    
+                }
+                
             }
+            .listStyle(PlainListStyle())
+            .navigationTitle("Cat Breeds")
+            .searchable(text: $searchText)
         }
     }
 }
