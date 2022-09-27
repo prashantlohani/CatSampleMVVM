@@ -24,7 +24,7 @@ struct BreedListView: View {
             List{
                 ForEach(filteredBreeds){ breed in
                     NavigationLink{
-                        
+                     BreedImages(breed: breed, breeds: [])
                     }label: {
                         BreedRow(breed: breed)
                     }
